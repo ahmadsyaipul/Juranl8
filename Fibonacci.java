@@ -16,9 +16,12 @@ public class Fibonacci {
         for(int i = 2; i < n; i++) {
             fib[i] = fib[i-1] + fib[i-2];
         }
-
+        long
+                jumlah=0;
         for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
+            jumlah = jumlah + fib[i];
         }
+        System.out.println(jumlah);
+
     }
 }
